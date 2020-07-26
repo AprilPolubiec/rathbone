@@ -12,13 +12,11 @@ code {
     monospace;
 }
 
-.bg-image {
+video {
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
-}
-
-.bg-image > video {
-  width: 100%;
-  margin-top: -19vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
