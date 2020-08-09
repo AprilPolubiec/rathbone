@@ -27,7 +27,6 @@ a:visited {
   position: relative;
   overflow: hidden;
   background-color: black;
-  color: chartreuse;
 }
 
 video {
@@ -218,3 +217,18 @@ video {
   -ms-transform: translateX(30px);
   transition: all 0.2s linear;
 } */
+
+#socials {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 33px;
+  left: 50vw;
+  width: 110px;
+  transform: translateX(-55px);
+}
+
+#socials > * {
+  color: #9f9e9e;
+}

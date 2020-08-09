@@ -20,20 +20,20 @@ export default function Music() {
 
   const [albums, setAlbums] = useState([])
   useEffect(() => {
-    // db.collection('albums')
-    //   .orderBy('date')
-    //   .get()
-    //   .then((collectionRef) => {
-    //     var fetchedAlbums = []
-    //     collectionRef.docs.forEach((doc) => {
-    //       fetchedAlbums.push({
-    //         title: doc.id,
-    //         url: doc.data().url,
-    //         id: doc.data().id,
-    //       })
-    //     })
-    //     setAlbums(fetchedAlbums)
-    //   })
+    db.collection('albums')
+      .orderBy('date')
+      .get()
+      .then((collectionRef) => {
+        var fetchedAlbums = []
+        collectionRef.docs.forEach((doc) => {
+          fetchedAlbums.push({
+            title: doc.id,
+            url: doc.data().url,
+            id: doc.data().id,
+          })
+        })
+        setAlbums(fetchedAlbums)
+      })
   }, [])
 
   return (
