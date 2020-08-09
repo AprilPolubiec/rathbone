@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import logoVideo from '../media/RathboneLogoWave1.m4v'
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft'
 import ArrowRightIcon from '@material-ui/icons/ArrowRight'
-import Music from './Music'
+import InstagramIcon from '@material-ui/icons/Instagram'
+import YouTubeIcon from '@material-ui/icons/YouTube'
+
 import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles((theme) => ({
@@ -57,6 +59,27 @@ export default function Home() {
             Music
           </div>
         </Link>
+
+        <div id='socials'>
+          <a href='https://www.instagram.com/rathbone_/' target='_blank'>
+            <InstagramIcon style={{ fontSize: 30 }} />
+          </a>
+          <a
+            href='https://www.youtube.com/channel/UCq2VjPylnROGkqQjJwX0a1Q'
+            target='_blank'
+          >
+            <YouTubeIcon style={{ fontSize: 40 }} />
+          </a>
+          <a href='https://rathbone.bandcamp.com/' target='_blank'>
+            <img
+              src={require('../media/bandcamp.png')}
+              height='25px'
+              width='25px'
+              alt='bandcamp'
+            />
+          </a>
+        </div>
+
         <Link
           to={{
             pathname: '/videos',
