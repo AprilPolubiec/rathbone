@@ -10,13 +10,9 @@ export default function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
+          <Route exact path='/' component={Page(Home)}></Route>
           <Route exact path='/music' component={Page(Music)}></Route>
-          <Route exact path='/videos' component={Page(Videos)}>
-            <Videos />
-          </Route>
+          <Route exact path='/videos' component={Page(Videos)}></Route>
         </Switch>
       </Router>
     </>
