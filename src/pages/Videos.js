@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import YouTube from 'react-youtube'
 import { makeStyles } from '@material-ui/core/styles'
 import BottomNav from '../components/BottomNav'
+//TODO: save this in .config
 require('dotenv').config()
 
 const CHANNEL_ID = 'UCq2VjPylnROGkqQjJwX0a1Q'
